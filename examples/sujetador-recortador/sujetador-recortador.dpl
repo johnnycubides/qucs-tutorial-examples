@@ -1,0 +1,33 @@
+<Qucs Schematic 0.0.24>
+<Properties>
+  <View=0,0,800,800,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=sujetador-recortador.dat>
+  <DataDisplay=sujetador-recortador.sch>
+  <OpenDisplay=1>
+  <Script=sujetador-recortador.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 100 250 240 160 3 #c0c0c0 1 00 1 0 0.01 0.03 1 -6.02177 5 6.24214 1 -1 1 1 315 0 225 "" "" "">
+	<"ngspice/tran.v(in1)" #0000ff 0 3 0 0 0>
+	<"ngspice/tran.v(out_sujetador)" #ff0000 0 3 0 0 0>
+  </Rect>
+  <Rect 130 570 240 160 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 "" "" "">
+	<"ngspice/tran.v(out_sujetador)" #0000ff 0 3 0 0 0>
+	<"ngspice/tran.v(vout_recortador)" #ff0000 0 3 0 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
