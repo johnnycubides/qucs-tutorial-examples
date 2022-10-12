@@ -36,9 +36,10 @@
   <720 260 720 260 "Vdiodo" 750 230 0 "">
 </Wires>
 <Diagrams>
-  <Rect 1097 509 444 289 3 #c0c0c0 1 00 1 -3.31758e-24 0.1 0.761559 1 -0.00484769 0.01 0.0533245 1 -1 0.2 1 315 0 225 "V d" "I d" "">
+  <Rect 1097 509 444 289 3 #c0c0c0 1 00 1 -3.31758e-24 0.1 0.761559 1 -0.00484769 0.01 0.0533245 1 -1 0.5 1 315 0 225 "V d" "I d" "">
 	<"ngspice/i(vidiodo)@v(vdiodo)" #ff0000 2 3 0 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
+  <Text 510 160 12 #000000 0 "Simulación en DC haciendo un barrido de voltaje\nen la fuente V1 variado entre 0 a 25 V">
 </Paintings>
