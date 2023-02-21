@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.24>
 <Properties>
-  <View=0,0,1455,900,1,0,0>
+  <View=0,0,1455,945,1,0,0>
   <Grid=10,10,1>
   <DataSet=comparador-diferencial-bjt.dat>
   <DataDisplay=comparador-diferencial-bjt.dpl>
@@ -26,7 +26,7 @@
   <GND * 1 280 720 0 0 0 0>
   <GND * 1 440 720 0 0 0 0>
   <Vac V3 1 440 670 18 -26 0 1 "3 V" 1 "100 Hz" 0 "0" 0 "0" 0>
-  <.TR TR1 1 650 100 0 67 0 0 "lin" 1 "0" 1 "5 ms" 1 "100" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+  <.TR TR1 1 650 100 0 81 0 0 "lin" 1 "0" 1 "5 ms" 1 "100" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <R R4 1 440 590 15 -26 0 1 "1 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <R R3 1 280 590 15 -26 0 1 "1 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <R R1 1 160 180 15 -26 0 1 "4500 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
@@ -56,7 +56,7 @@
   <440 620 440 640 "" 0 0 0 "">
   <440 700 440 720 "" 0 0 0 "">
   <460 280 460 280 "ref" 490 250 0 "">
-  <70 280 70 280 "in" 100 250 0 "">
+  <70 280 70 280 "in" 100 240 0 "">
   <160 110 160 110 "vcc" 190 80 0 "">
   <380 110 380 110 "vcc" 410 80 0 "">
   <470 230 470 230 "out" 500 200 0 "">
@@ -65,17 +65,17 @@
   <440 540 440 540 "in" 470 510 0 "">
 </Wires>
 <Diagrams>
-  <Rect 800 642 608 455 3 #c0c0c0 1 00 1 0 0.0005 0.005 1 -0.900104 2 10 1 -1 0.5 1 315 0 225 "" "" "">
-	<"ngspice/tran.v(in)" #00aa00 0 3 0 0 0>
-	<"ngspice/tran.v(out)" #ff0000 0 3 0 0 0>
-	<"ngspice/tran.v(ref)" #000000 0 3 0 0 0>
+  <Rect 800 642 608 455 3 #c0c0c0 1 00 1 0 0.0005 0.005 1 -0.900104 2 10 1 -1 0.2 1 315 0 225 "" "" "">
+	<"ngspice/tran.v(in)" #00aa00 2 3 0 0 0>
+	<"ngspice/tran.v(out)" #ff0000 2 3 0 0 0>
+	<"ngspice/tran.v(ref)" #000000 2 3 0 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
   <Text 40 720 12 #000000 0 "Vcc:\nTensión de alimentación\ndel circuito">
-  <Text 230 770 12 #000000 0 "ref: tensión de referencia\na superar para cambiar\nestado lógico, puede\nser dada desde un\npotenciometro">
-  <Text 440 760 12 #000000 0 "in: es la entrada del circuito\nLa cual es la salida amplificada\ndel sistema sensor">
   <Text 300 370 12 #000000 0 "I1: Esta fuente de corriente\nse puede diseñar con un\nespejo de corriente fijado\ncon la Iref">
   <Text 820 730 12 #000000 0 "En negro vref fijada a un valor,\nen verde la tensión variable dada por\nel sensor, en rojo la salida que cambia\nabrutamente entre dos estados lógicos:\n(0 en 1.6V y 1 en más de  8V) esto se da\ncuando Vin supera a el voltaje Vref fijado">
   <Text 870 100 12 #000000 0 "La salida de este circuito se puede poner en un circuito con\nun transitor en modo interruptor">
+  <Text 460 770 12 #000000 0 "in: es la entrada del circuito\nLa cual es la salida amplificada\ndel sistema sensor">
+  <Text 230 790 12 #000000 0 "ref: tensión de referencia\na superar para cambiar\nestado lógico, puede\nser dada desde un\npotenciometro">
 </Paintings>
