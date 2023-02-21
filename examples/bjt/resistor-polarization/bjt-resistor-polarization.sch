@@ -1,11 +1,11 @@
 <Qucs Schematic 0.0.24>
 <Properties>
-  <View=413,190,1517,1204,1.22089,0,51>
+  <View=413,190,1879,1204,1.22089,0,0>
   <Grid=10,10,1>
-  <DataSet=bjt1.dat>
-  <DataDisplay=bjt1.dpl>
+  <DataSet=bjt-resistor-polarization.dat>
+  <DataDisplay=bjt-resistor-polarization.dpl>
   <OpenDisplay=1>
-  <Script=bjt1.m>
+  <Script=bjt-resistor-polarization.m>
   <RunScript=0>
   <showFrame=0>
   <FrameText0=Title>
@@ -25,7 +25,7 @@
   <R R2 1 720 570 15 -26 0 1 "2k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <R R4 1 880 370 15 -26 0 1 "1k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <R R3 1 880 570 15 -26 0 1 "100" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
-  <.TR TR1 1 1070 490 0 67 0 0 "lin" 1 "0" 1 "1 ms" 1 "11" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+  <.TR TR1 1 1230 500 0 82 0 0 "lin" 1 "0" 1 "1 ms" 1 "11" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
 </Components>
 <Wires>
   <720 440 720 480 "" 0 0 0 "">
@@ -51,7 +51,12 @@
   <940 520 940 520 "ve" 970 490 0 "">
 </Wires>
 <Diagrams>
-  <Rect 590 920 619 236 3 #c0c0c0 1 00 1 0 0.0001 0.001 1 1.29772 0.2 2.2 1 -1 0.5 1 315 0 225 "" "" "">
+  <Tab 1230 917 609 227 3 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 59 315 0 225 "" "" "">
+	<"ngspice/tran.v(vb)" #0000ff 0 3 1 0 0>
+	<"ngspice/tran.v(ve)" #0000ff 0 3 1 0 0>
+	<"ngspice/tran.v(vout)" #0000ff 0 3 1 0 0>
+  </Tab>
+  <Rect 550 920 619 236 3 #c0c0c0 1 00 1 0 0.0001 0.001 1 1.29772 0.2 2.2 1 -1 0.5 1 315 0 225 "" "" "">
 	<"ngspice/tran.v(vout)" #0000ff 0 3 0 0 0>
 	<"ngspice/tran.v(vb)" #ff0000 0 3 0 0 0>
 	  <Mkr 0.0005056 373 -273 3 0 0>
@@ -60,4 +65,5 @@
   </Rect>
 </Diagrams>
 <Paintings>
+  <Text 1090 320 12 #000000 0 "Simulación de un transistor en polarización\nuniversal con resistencias">
 </Paintings>
