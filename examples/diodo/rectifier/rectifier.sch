@@ -24,7 +24,7 @@
   <Vac V2 1 70 200 18 -26 0 1 "12 V" 1 "1 kHz" 0 "0" 0 "0" 0>
   <GND * 1 20 160 0 0 0 0>
   <.TR TR1 1 390 240 0 75 0 0 "lin" 1 "0" 1 "1 ms" 1 "1000" 1 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
-  <NutmegEq Entrada rectificador puente 1 1280 770 -29 18 0 0 "tran" 1 "in_bridge= in_pos - in_neg" 1>
+  <NutmegEq Entrada_rectificador_puente 1 1280 770 -29 18 0 0 "tran" 1 "in_bridge= in_pos - in_neg" 1>
   <Diode D_1N4004_4 1 210 570 -26 -79 0 2 "76.9p" 1 "1.45" 1 "39.8p" 0 "0.333" 0 "0.7" 0 "0.5" 0 "0" 0 "0" 0 "2" 0 "42m" 0 "4.32u" 0 "0" 0 "0" 0 "1" 0 "1" 0 "400" 0 "5u" 0 "26.85" 0 "3.0" 0 "1.11" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0" 0 "26.85" 0 "1.0" 0 "normal" 0>
   <Diode D_1N4004_3 1 210 730 -26 -79 0 2 "76.9p" 1 "1.45" 1 "39.8p" 0 "0.333" 0 "0.7" 0 "0.5" 0 "0" 0 "0" 0 "2" 0 "42m" 0 "4.32u" 0 "0" 0 "0" 0 "1" 0 "1" 0 "400" 0 "5u" 0 "26.85" 0 "3.0" 0 "1.11" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0" 0 "26.85" 0 "1.0" 0 "normal" 0>
   <Diode D_1N4004_5 1 360 730 -26 -79 0 2 "76.9p" 1 "1.45" 1 "39.8p" 0 "0.333" 0 "0.7" 0 "0.5" 0 "0" 0 "0" 0 "2" 0 "42m" 0 "4.32u" 0 "0" 0 "0" 0 "1" 0 "1" 0 "400" 0 "5u" 0 "26.85" 0 "3.0" 0 "1.11" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0" 0 "26.85" 0 "1.0" 0 "normal" 0>
@@ -93,9 +93,9 @@
   </Rect>
 </Diagrams>
 <Paintings>
-  <Line -40 340 1510 0 #000000 2 2>
   <Text 940 -30 12 #ff0000 0 "Rectificador con tap central">
   <Text 900 370 12 #0000ff 0 "Rectificador con puente de diodos completo">
   <Text 580 740 12 #000000 0 "Como la entrada del rectificador por puente de diodos no puede acoplarse a la\nmisma tierra de la salida (no se podría rectificar completamente) se crea una\nseñal adicional llamada in__bridge; in__bridge es la diferencia entre\nin__pos e in__neg de la fuente V3, ambas señales son medidas desde el punto\nde referencia GND, la diferencia es en realidad la entrada para la función de\ntransferencia que se observa en la gráfica.">
-  <Arrow 1180 850 60 0 20 8 #000000 2 1 0>
+  <Line -30 350 1490 0 #000000 2 2>
+  <Arrow 1170 820 60 0 20 8 #000000 2 1 0>
 </Paintings>
