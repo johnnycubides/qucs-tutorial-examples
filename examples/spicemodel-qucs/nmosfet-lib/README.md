@@ -57,7 +57,7 @@ DSD 3 10 DSUB
 
 .SUBCKT BSS138W 10 20 30 
 
-Los nodos 10, 20 y 30 corresponde a el nodo Drain, Gate y Source, que corresponden exactamente al símbolo señalado.
+Los nodos 10, 20 y 30 corresponde a el nodo Drain: 1, Gate: 2 y Source: 3, que corresponden exactamente al orden de los nodos del símbolo señalado.
 
 **Observación 2**: En el `./nmosfet.lib` puede agregar cuantos .SUBCKT puedan corresponder al orden de los nodos
 del simbolo que para este caso representa los nmos.
