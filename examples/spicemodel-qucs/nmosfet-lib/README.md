@@ -9,10 +9,14 @@ Deberá crear un directorio `user_lib` en `.qucs/` donde haya instalado qucs, en
 * El archivo `nmosfet.lib` que representa los modelos spices de diferentes nmosfet.
 * EL directorio `nmosfet/` que representa el símbolo usable en qucs para los mosfets.
 
-Ejemplo:
+**Ejemplo en Linux**:
 
 ![Librería en qucs](./ubicacion-libreria.png)
 
+**Ejemplo en Windows**: (Observe la ruta, desde el usuario personal: `C:\PERSONAL\.qucs`)
+
+![windows directorio](./directorio-windows.png)
+![windows lib](./directorio-windows-lib.png)
 
 El símbolo usado tiene la siguiente configuración la cual debe corresponder al orden del modelspice
 del subcircuito que representa al componente electrónico.
