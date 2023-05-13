@@ -15,6 +15,10 @@ Deberá crear un directorio `user_lib` en `.qucs/` donde haya instalado qucs, en
 
 **Ejemplo en Windows**: (Observe la ruta, desde el usuario personal: `C:\PERSONAL\.qucs`)
 
+**Nota**: Si instaló alguna versión anterior de Qucs, por favor revisar que se haya borrado
+el contenido de esa anterior instalación, pueda que la ruta descrita no funcione como configuración
+de `user_lib`.
+
 ![windows directorio](./directorio-windows.png)
 ![windows lib](./directorio-windows-lib.png)
 
