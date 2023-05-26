@@ -9,6 +9,8 @@ Deberá crear un directorio `user_lib` en `.qucs/` donde haya instalado qucs, en
 * El archivo `nmosfet.lib` que representa los modelos spices de diferentes nmosfet.
 * EL directorio `nmosfet/` que representa el símbolo usable en qucs para los mosfets.
 
+**Nota**: Puede descargar el nmosfet.lib y el nmosfet/ desde [este archivo comprimido nmosfet.zip](./nmosfet.zip).
+
 **Ejemplo en Linux**:
 
 ![Librería en qucs](./ubicacion-libreria.png)
