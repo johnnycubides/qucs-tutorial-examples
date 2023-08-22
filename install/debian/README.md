@@ -22,7 +22,8 @@ en un archivo .zip
 Para instalar qucs en el sistema puede ejecutar las siguientes instrucciones:
 
 ```bash
- ~  $  cd ~ && mkdir -p ~/gitPackages/qucs   # Crear directorio que contendrá la aplicación Qucs
+ ~  $  cd ~
+ ~  $  mkdir -p ~/gitPackages/qucs   # Crear directorio que contendrá la aplicación Qucs
  ~  $  unzip ~/Downloads/Qucs-S-x86_64-Linux.AppImage.zip -d ~/gitPackages/qucs/ # Descomprime la aplicación en el directorio creado
 Archive:  /home/johnny/Downloads/Qucs-S-x86_64-Linux.AppImage.zip
   inflating: /home/johnny/gitPackages/qucs/Qucs-S-x86_64-Linux.AppImage
