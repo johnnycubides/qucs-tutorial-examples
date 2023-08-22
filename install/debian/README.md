@@ -34,7 +34,7 @@ Qucs-S-x86_64-Linux.AppImage
  ~/gitPackages/qucs  $  chmod +x qucs.app # Dar permisos de ejecución
  ~/gitPackages/qucs  $  sudo ln -sr qucs.app /usr/local/bin/ # Crear enlace simbólico
 [sudo] password for johnny: 
- ~/gitPackages/qucs  $  qucs.app # Abrir la aplicación
+ ~/gitPackages/qucs  $ 
 ```
 
 > **Nota**: Si la aplicación no está comprimida puede saltar ese paso y mover el archivo con la instrucción `mv`, ejemplo:
