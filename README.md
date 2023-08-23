@@ -6,7 +6,7 @@ Aquí encontrarás diferentes ejemplos ilustrados con esta maravillosa herramien
 
 También encontrarás instrucciones de instalación para diferentes plataformas:
 
-* [Instalación de Qucs-Ngspice en Linux](./install/debian/README.md)
+* [Instalación de Qucs-Ngspice en Linux](./install/linux/README.md)
 * [Instalación de Qucs-Ngspice en Windows](./install/windows/README.md)
 
 Saludos,
