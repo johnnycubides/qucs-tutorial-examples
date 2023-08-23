@@ -1,4 +1,4 @@
-# Instalación de qucs en debian
+# Instalación de qucs en Linux
 
 
 > **¡Tenga en cuenta!** Las instrucciones que van delante del símbolo ` $ ` son aquellas a realizar en el prompt de la consola; deberá copiarlas y
