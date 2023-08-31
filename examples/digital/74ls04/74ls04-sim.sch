@@ -1,6 +1,6 @@
-<Qucs Schematic 1.0.1>
+<Qucs Schematic 2.0.0>
 <Properties>
-  <View=446,-232,2084,742,2.09878,125,656>
+  <View=446,-232,2084,742,1.43349,22,379>
   <Grid=10,10,1>
   <DataSet=74ls04-sim.dat>
   <DataDisplay=74ls04-sim.dpl>
@@ -18,7 +18,6 @@
 <Components>
   <GND * 1 560 250 0 0 0 0>
   <Vdc V1 1 560 180 18 -26 0 1 "5 V" 1>
-  <SpLib X1 1 830 250 -29 -164 1 2 "/home/johnny/.qucs/user_lib/SN74LS04.lib" 0 "SN74LS04" 1 "auto" 1 "" 1>
   <GND * 1 770 320 0 0 0 0>
   <GND * 1 990 300 0 0 0 0>
   <R R1 1 990 250 15 -26 0 1 "10 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
@@ -27,6 +26,7 @@
   <R R2 1 720 220 -26 -63 0 2 "10 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <GND * 1 630 320 0 0 0 0>
   <SPICEINIT SPICEINIT1 1 900 340 -38 19 0 0 "set ngbehavior=ltpsa" 1>
+  <SpLib X1 1 830 250 -29 -164 1 2 "/home/johnny/.qucs/user_lib/SN74LS04.lib" 0 "SN74LS04" 1 "auto" 1 "" 1>
 </Components>
 <Wires>
   <560 210 560 250 "" 0 0 0 "">
