@@ -63,7 +63,7 @@ y seguido instala la versión de ngspice disponible.
 
 > **Nota 1**: Observe que al iniciar qucs por primera vez indicará que requiere configurar el motor de simulación.
 
-> **Nota 2**: Si no lanza la aplicación y además indica que requiere fuse, podrá intalar en debian esta librería
+> **Nota 2**: Si no se lanza la aplicación y además indica que requiere fuse, podrá instalar en debian esta librería
 > con el comando `sudo apt install libfuse2`
 
 ## Configurar ngspice en qucs
