@@ -6,7 +6,7 @@ Aquí encontrarás diferentes ejemplos ilustrados con esta maravillosa herramien
 
 ## Tutoriales
 
-* [Cómo agregar modelos spices y símbolos para los dispositivos en qucs](./examples/spicemodel-qucs/README.md)
+* [Cómo agregar modelos spices y símbolos para los dispositivos en qucs](./examples/spicemodel-qucs/)
 
 ## Instrucciones de Instalación de Qucs y NGspice
 
