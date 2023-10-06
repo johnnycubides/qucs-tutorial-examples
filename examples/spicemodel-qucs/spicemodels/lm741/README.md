@@ -1,10 +1,11 @@
 # Modelo spice y símbolo para el lm741
 
-El lm741 es un amplificador operacional. Para agregar el modelo spice
-deberá agregar los siguientes archicos a `.qucs/user_lib`:
+![lm741](./lm741.png)
 
-* `lm741.lib` modelo spice del lm741
-* Directorio `lm741/` el cual contiene el símbolo `./lm741/lm741.sym`
+
+El lm741 es un amplificador operacional. Para agregar el modelo spice
+deberá agregar descargar el [./lm741.zip](./lm741.zip) en el Directorio `.qucs/user_lib`
+el cál se encuentra en el directorio de su usuario personal o donde haya instalados qucs.
 
 Regards,
 
