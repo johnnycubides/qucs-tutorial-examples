@@ -1,0 +1,71 @@
+* DIODES INCORPORATED AND ITS AFFILIATED COMPANIES AND SUBSIDIARIES (COLLECTIVELY, "DIODES") PROVIDE THESE SPICE MODELS AND DATA (COLLECTIVELY, THE "SM DATA") "AS IS" AND WITHOUT ANY REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, ANY WARRANTY ARISING FROM COURSE OF DEALING OR COURSE OF PERFORMANCE, OR ANY WARRANTY THAT ACCESS TO OR OPERATION OF THE SM DATA WILL BE UNINTERRUPTED, OR THAT THE SM DATA OR ANY SIMULATION USING THE SM DATA WILL BE ERROR FREE. TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL DIODES BE LIABLE FOR ANY DIRECT OR INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE PRODUCTION OR USE OF SM DATA, HOWEVER CAUSED AND UNDER WHATEVER CAUSE OF ACTION OR THEORY OF LIABILITY BROUGHT (INCLUDING, WITHOUT LIMITATION, UNDER ANY CONTRACT, NEGLIGENCE OR OTHER TORT THEORY OF LIABILITY), EVEN IF DIODES HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND DIODES' TOTAL LIABILITY (WHETHER IN CONTRACT, TORT OR OTHERWISE) WITH REGARD TO THE SM DATA WILL NOT, IN THE AGGREGATE, EXCEED ANY SUMS PAID BY YOU TO DIODES FOR THE SM DATA.
+
+
+
+*---------- BSS138W Spice Model ----------
+.SUBCKT BSS138W 10 20 30 
+*     TERMINALS:  D  G  S
+M1 1 2 3 3 NMOS L = 1E-006 W = 1E-006 
+RD 10 1 0.9338 
+RS 30 3 0.001 
+RG 20 2 47 
+CGS 2 3 1.906E-011 
+EGD 12 0 2 1 1 
+VFB 14 0 0 
+FFB 2 1 VFB 1 
+CGD 13 14 4.9E-011 
+R1 13 0 1 
+D1 12 13 DLIM 
+DDG 15 14 DCGD 
+R2 12 15 1 
+D2 15 0 DLIM 
+DSD 3 10 DSUB 
+.MODEL NMOS NMOS LEVEL = 3 VMAX = 8E+005 ETA = 1E-012 VTO = 1.422 
++ TOX = 6E-008 NSUB = 1E+016 KP = 0.5025 U0 = 400 KAPPA = 7.117 
+.MODEL DCGD D CJO = 9.463E-012 VJ = 6.446 M = 0.9816 
+.MODEL DSUB D IS = 7.582E-010 N = 1.586 RS = 0.1976 
++ BV = 65 CJO = 1.173E-011 VJ = 0.03727 M = 0.2868 
+.MODEL DLIM D IS = 0.0001 
+.ENDS BSS138W
+
+*Diodes BSS138W Spice Model v1.0 Last Revised 2012/8/22
+
+********************************
+* Copyright:                   *
+* Vishay Intertechnology, Inc. *
+********************************
+*Aug 18, 2014
+*ECN S14-1662, Rev. B
+*File Name: Si2301CDS_PS.txt and Si2301CDS_PS.lib
+*This document is intended as a SPICE modeling guideline and does not
+*constitute a commercial product data sheet.  Designers should refer to the
+*appropriate data sheet of the same number for guaranteed specification
+*limits.
+.SUBCKT Si2301CDS D G S
+M1  3  GX S S PMOS W=500000u L=0.250u 
+M2  S  GX S D NMOS W=500000u L=0.416u
+RG  G  GX     6
+R1  D  3      RTEMP 3E-2
+CGS G  S      100E-12
+DBD D  S      DBD
+************************************************************ 
+.MODEL  PMOS         PMOS (LEVEL  = 3        TOX    = 1.7E-8
++ RS     = 4.5E-2          RD     = 0        NSUB   = 1E16   
++ KP     = 1E-5            UO     = 400             
++ VMAX   = 0               XJ     = 5E-7     KAPPA  = 1E-3
++ ETA    = 1E-4            TPG    = -1  
++ IS     = 0               LD     = 0                 
++ CGSO   = 0               CGDO   = 0        CGBO   = 0 
++ NFS    = 0.8E12          DELTA  = 0.1)
+************************************************************* 
+.MODEL  NMOS         NMOS (LEVEL  = 3        TOX    = 1.7E-8
++NSUB    = 9E16            IS     = 0        TPG    = -1)   
+************************************************************* 
+.MODEL DBD D (CJO=80E-12 VJ=0.38 M=0.39
++FC=0.5 TT=1.8e-08 T_MEASURED=25 BV=20.5
++RS=3.308e-02 N=2.756 IS=6.178e-05 IKF=1000
++EG=8.569e-01 XTI=2.641 TRS1=1.602e-07)
+************************************************************* 
+.MODEL RTEMP RES (TC1=7E-3 TC2=5.5E-6)
+************************************************************* 
+.ENDS Si2301CDS
