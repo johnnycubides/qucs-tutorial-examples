@@ -1,11 +1,26 @@
-# Sumador completo con ngspice
+---
+lang: es
+---
 
-Simulación del sumador completo.
-![Sumador medio](./fulladder.png)
+# Simulación de un sumador completo
 
-Símbolo del medio sumador
-![Símbolo del medio sumador](./halfadder_sub.png)
+En esta simulación se hace un diseño jerárquico como sigue:
 
-Circuito del medio sumador
-![Circuito del medio sumador](./halfadder.png)
+* [halfadder.sch](./halfadder.sch) diseño en xspice de sumador medio
+* [./fulladder.sch](./fulladder.sch) diseño en xspice de sumador completo
+haciendo uso del sumador medio anteriormente descrito.
+* [./fulladder_tb.sch](./fulladder_tb.sch) banco de pruebas del sumador completo
+
+## Banco de pruebas del sumador completo
+
+![Banco de pruebas del sumador completo](./fulladder_tb.png)
+
+## Sumador completo
+
+![Diseño del sumador completo](./fulladder.png)
+
+## Sumador medio
+
+![Sumador medio](./halfadder.png)
+
 
