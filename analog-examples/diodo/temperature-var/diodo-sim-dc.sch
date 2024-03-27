@@ -1,6 +1,6 @@
-<Qucs Schematic 1.0.1>
+<Qucs Schematic 24.1.0>
 <Properties>
-  <View=0,-97,1671,1159,1.21,411,178>
+  <View=466,58,1443,784,0.639344,0,0>
   <Grid=10,10,1>
   <DataSet=diodo-sim-dc.dat>
   <DataDisplay=diodo-sim-dc.dpl>
