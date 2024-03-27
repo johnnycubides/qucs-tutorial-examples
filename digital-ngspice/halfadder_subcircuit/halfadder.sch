@@ -1,6 +1,6 @@
 <Qucs Schematic 24.1.0>
 <Properties>
-  <View=204,94,1228,744,1.53642,0,0>
+  <View=168,93,644,396,3.30464,0,0>
   <Grid=10,10,1>
   <DataSet=halfadder.dat>
   <DataDisplay=halfadder.dpl>
