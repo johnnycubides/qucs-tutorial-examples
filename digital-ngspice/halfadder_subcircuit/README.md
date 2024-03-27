@@ -1,7 +1,7 @@
 # Sumador medio con ngspice
 
 Simulación del sumador medio.
-![Sumador medio](./halfadder.png)
+![Sumador medio](./halfadder_tb.png)
 
 Símbolo del medio sumador
 ![Símbolo del medio sumador](./halfadder_sub.png)
