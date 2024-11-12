@@ -4,7 +4,9 @@ Aquí encontrarás diferentes ejemplos ilustrados con esta maravillosa herramien
 
 ## Tutoriales
 
-* [Cómo agregar modelos spices y símbolos para los dispositivos en qucs](./examples/spicemodel-qucs/)
+* [Cómo agregar modelos spices y símbolos para los dispositivos en qucs](./analog-examples/spicemodel-qucs/README.md)
+* [Uso de ecuaciones en qucs](./analog-examples/power/power-resistor/README.md)
+
 
 ## Instrucciones de Instalación de Qucs y NGspice
 
