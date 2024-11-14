@@ -7,9 +7,7 @@
 # date: Wednesday 30 August 2023
 status=$?
 
-unzip ./sdlm057.zip
-mv ./SN74LS04.cir ./SN74LS04.lib
 mkdir -p ~/.qucs/user_lib/
-mv ./SN74LS04.lib ~/.qucs/user_lib/
+cp ./SN74LS04.lib ~/.qucs/user_lib/
 cp ./CD4069UB.lib ~/.qucs/user_lib/
 echo "tarea terminada"
